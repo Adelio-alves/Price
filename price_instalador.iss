@@ -15,9 +15,9 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={autopf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
-SourceDir=E:\python\price
+SourceDir=.
 OutputDir=output_installer
-OutputBaseFilename=Instalador_Price_v34_0
+OutputBaseFilename=Instalador_Price_v35_0
 SetupIconFile=app.ico
 LicenseFile=EULA.rtf
 Compression=lzma
@@ -34,9 +34,9 @@ Name: "desktopicon"; Description: "Criar atalho na área de trabalho"; GroupDesc
 
 [Files]
 Source: "dist\price\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "autorizacao.json"; DestDir: "{app}"; Flags: ignoreversion skipifsourcedoesntexist
 Source: "app.ico"; DestDir: "{app}"; Flags: ignoreversion skipifsourcedoesntexist
 Source: "EULA.rtf"; DestDir: "{app}"; Flags: ignoreversion skipifsourcedoesntexist
+Source: "autorizacao.example.json"; DestDir: "{app}"; DestName: "autorizacao.json"; Flags: ignoreversion skipifsourcedoesntexist
 
 [Icons]
 Name: "{group}\{#MyAppName}"; Filename: "{app}\{#MyAppExeName}"; IconFilename: "{app}\app.ico"
