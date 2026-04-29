@@ -1,0 +1,51 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+*.db
+.env
+venv/
+env/
+.venv/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Configurações locais
+*.json
+config*.json
+painel_precos_config.json
+autorizacao.json
+
+# Relatórios e arquivos gerados
+*.pdf
+*.xlsx
+*.xls
+*.csv
+*.txt
+
+# IDEs
+.vscode/
+.idea/
+
+# Laravel / PHP, se for o projeto Logochega
+/vendor/
+/node_modules/
+.env
+.env.backup
+.env.production
+/storage/*.key
+/public/storage
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
